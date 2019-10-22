@@ -2,8 +2,6 @@ package com.innovandoapps.library.customviewlibrary;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.design.widget.TextInputEditText;
-import android.support.design.widget.TextInputLayout;
 import android.text.InputType;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -13,6 +11,8 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.innovandoapps.library.customviewlibrary.Listeners.OnClickLoginListener;
 import com.innovandoapps.library.customviewlibrary.Listeners.OnClickLostPasswordListener;
 import com.innovandoapps.library.customviewlibrary.utils.ValidadorInput;

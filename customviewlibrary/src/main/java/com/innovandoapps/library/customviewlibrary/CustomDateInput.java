@@ -2,7 +2,6 @@ package com.innovandoapps.library.customviewlibrary;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -12,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
 import com.innovandoapps.library.kernel.dialogs.DialogDatePicker;
 import com.innovandoapps.library.kernel.dialogs.listener.OnDataSelectListener;
 import com.innovandoapps.library.kernel.utils.FechaUtil;

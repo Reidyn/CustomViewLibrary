@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.innovandoapps.library.customviewlibrary.utils.NumberTextWatcher;
 
 public class CustomNumberFormat extends LinearLayout {
 

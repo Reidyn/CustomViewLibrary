@@ -2,12 +2,12 @@ package com.innovandoapps.library.customviewlibrary;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import androidx.viewpager.widget.ViewPager;
 import com.innovandoapps.library.customviewlibrary.Listeners.OnAddGalleryAdapterListener;
 import com.innovandoapps.library.customviewlibrary.Listeners.OnAddImgGalleryListener;
 import com.innovandoapps.library.customviewlibrary.adapter.GaleriaAdapter;

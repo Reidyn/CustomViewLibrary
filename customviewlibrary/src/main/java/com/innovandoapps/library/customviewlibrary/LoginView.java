@@ -2,10 +2,7 @@ package com.innovandoapps.library.customviewlibrary;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Color;
 import android.os.Build;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.CardView;
 import android.text.InputType;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -16,6 +13,8 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import com.innovandoapps.library.customviewlibrary.Listeners.OnClickLoginListener;
 import com.innovandoapps.library.customviewlibrary.Listeners.OnClickLostPasswordListener;
 

@@ -3,7 +3,6 @@ package com.innovandoapps.library.customviewlibrary.utils;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
-
 import java.text.DecimalFormat;
 import java.text.ParseException;
 

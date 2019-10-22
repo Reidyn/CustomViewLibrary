@@ -1,11 +1,11 @@
 package com.innovandoapps.library.customviewlibrary;
 
 import android.content.Context;
-import android.support.design.widget.TextInputEditText;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
+import com.google.android.material.textfield.TextInputEditText;
 
 public class CustomCelularInput extends LinearLayout {
 
