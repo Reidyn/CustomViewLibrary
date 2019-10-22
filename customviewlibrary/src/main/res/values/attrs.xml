@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoginView">
+        <attr name="showRestartPass" format="boolean" />
+        <attr name="loginColor" format="color"/>
+        <attr name="showLabelTop" format="boolean" />
+        <attr name="stringLabelTop" format="string" />
+        <attr name="stringLabelUser" format="string"/>
+        <attr name="stringLabelPass" format="string"/>
+        <attr name="stringLabelBtnAccess" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="SimpleLoginView">
+        <attr name="showRestartPass1" format="boolean" />
+        <attr name="stringLabelUser1" format="string"/>
+        <attr name="stringLabelPass1" format="string"/>
+        <attr name="stringLabelBtnAccess1" format="string"/>
+        <attr name="inputtype" format="enum">
+                <enum name="TEXT" value="0"/>
+                <enum name="EMAIL" value="1"/>
+                <enum name="NUMBER" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomRounedEditText">
+        <attr name="showTitle" format="boolean" />
+        <attr name="stringTitle" format="string" />
+        <attr name="cpadding" format="integer" />
+        <attr name="enableEditable" format="boolean" />
+        <attr name="inputtype_edt" format="enum">
+                <enum name="TEXT" value="0"/>
+                <enum name="EMAIL" value="1"/>
+                <enum name="NUMBER" value="2"/>
+                <enum name="TEXT_LARGE" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomInputDate">
+        <attr name="showTitle_date" format="boolean" />
+        <attr name="stringTitle_date" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomGalleryView">
+        <attr name="inputtype_view" format="enum">
+                    <enum name="GALLERY_CAPTURA" value="0"/>
+                    <enum name="SIMPLE_VIEW" value="1"/>
+        </attr>
+        <attr name="source_view" format="enum">
+            <enum name="FILE" value="0"/>
+            <enum name="HTTP" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

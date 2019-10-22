@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/perla"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/azul2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lblmsjingreso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_msj_ingreso"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/primaryTextColor"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:padding="20dp" />
+
+            <LinearLayout
+                android:id="@+id/lineDivisor"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/gris1"
+                android:layout_marginBottom="3dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_style_1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp"
+                android:padding="20dp"
+                android:id="@+id/edtUsuario"
+                android:drawableLeft="@drawable/ic_account_box_white_24dp"
+                android:hint="@string/lbl_usuario"
+                android:textCursorDrawable="@drawable/cursor_color"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/lbl_password"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:padding="20dp"
+                android:background="@drawable/editext_style_1"
+                android:drawableLeft="@drawable/ic_https_white_24dp"
+                android:ems="10"
+                android:id="@+id/edtPassword"
+                android:layout_marginBottom="10dp"
+                android:textCursorDrawable="@drawable/cursor_color"/>
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_ver_pass"
+                android:id="@+id/chVerPass"
+                android:checked="false"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/primaryTextColor"/>
+
+
+            <TextView
+                android:id="@+id/lblolvpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center_horizontal"
+                android:text="@string/lbl_olv_pass"
+                android:textStyle="italic|bold"
+                android:textSize="18dp"
+                android:textColor="@color/naranjado1"
+                />
+
+             <Button
+                 android:id="@+id/btnIngresar"
+                 android:layout_marginTop="5dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="@string/lbl_ingresar"
+                 style="@style/btnStyleArsenic"
+                 android:layout_marginRight="5dp"
+                 android:layout_marginLeft="5dp"
+                 android:padding="20dp"/>
+
+        </LinearLayout>
+</android.support.v7.widget.CardView>

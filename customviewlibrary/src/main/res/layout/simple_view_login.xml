@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_defualt">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TxtInputUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_defualt">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtInputPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_defualt">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_ver_pass"
+        android:id="@+id/chVerPass"
+        android:checked="false"
+        android:layout_marginBottom="@dimen/margin_defualt"
+        android:textColor="@color/primaryTextColor"/>
+
+
+    <TextView
+        android:id="@+id/lblolvpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_defualt"
+        android:gravity="center_horizontal"
+        android:text="@string/lbl_olv_pass"
+        android:textStyle="italic|bold"
+        android:textSize="18dp"
+        android:textColor="@color/naranjado1" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/btnStyleBreakerBay"
+        android:padding="@dimen/padding_button"
+        android:text="@string/lbl_ingresar"/>
+</LinearLayout>
