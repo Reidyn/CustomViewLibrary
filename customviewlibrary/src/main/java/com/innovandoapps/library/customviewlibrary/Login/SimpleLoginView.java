@@ -1,4 +1,4 @@
-package com.innovandoapps.library.customviewlibrary;
+package com.innovandoapps.library.customviewlibrary.Login;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -15,6 +15,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.innovandoapps.library.customviewlibrary.Listeners.OnClickLoginListener;
 import com.innovandoapps.library.customviewlibrary.Listeners.OnClickLostPasswordListener;
+import com.innovandoapps.library.customviewlibrary.R;
 import com.innovandoapps.library.customviewlibrary.utils.ValidadorInput;
 
 public class SimpleLoginView extends LinearLayout {
