@@ -3,32 +3,30 @@ package com.innovandoapps.library.customviewlibrary;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 
-public abstract class AbstractCustomViewGroup extends FrameLayout {
+import androidx.annotation.Nullable;
 
-    public AbstractCustomViewGroup(Context context) {
+public abstract  class AbstractCustomLinearLayout extends LinearLayout {
+
+    public AbstractCustomLinearLayout(Context context) {
         super(context);
         init();
     }
 
-    public AbstractCustomViewGroup(Context context, AttributeSet attrs) {
+    public AbstractCustomLinearLayout(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         init();
-    }
-
-
-    @Override
-    protected void onLayout(boolean b, int i, int i1, int i2, int i3) {
-
     }
 
     protected void init(){
         String infService = Context.LAYOUT_INFLATER_SERVICE;
         LayoutInflater layoutInflater = (LayoutInflater)getContext().getSystemService(infService);
         layoutInflater.inflate(getLayoutView(),this, true);
+        bindeViews();
     }
 
     protected abstract int getLayoutView();
+
+    protected abstract void bindeViews();
 }
