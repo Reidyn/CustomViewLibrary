@@ -15,4 +15,7 @@
     <color name="azul1">#4000FF</color>
     <color name="azul2">#086A87</color>
     <color name="naranjado1">#DBA901</color>
+
+    <color name="gris2">#D8D8D8</color>
+    <color name="negro1">#424242</color>
 </resources>

@@ -1,4 +1,4 @@
-package com.innovandoapps.library.customviewlibrary;
+package com.innovandoapps.library.customviewlibrary.Login;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -17,6 +17,7 @@ import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import com.innovandoapps.library.customviewlibrary.Listeners.OnClickLoginListener;
 import com.innovandoapps.library.customviewlibrary.Listeners.OnClickLostPasswordListener;
+import com.innovandoapps.library.customviewlibrary.R;
 
 /**
  * Created by desarrollo on 23/11/17.

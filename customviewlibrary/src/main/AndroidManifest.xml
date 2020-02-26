@@ -1,2 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.innovandoapps.library.customviewlibrary"/>
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.innovandoapps.library.customviewlibrary">
+
+    <uses-sdk tools:overrideLibrary="com.mindorks.editdrawabletext"/>
+</manifest>
