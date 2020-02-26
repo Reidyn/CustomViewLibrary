@@ -9,6 +9,6 @@ allprojects {
 }
 
 dependencies {
-   implementation 'com.github.Reidyn:CustomViewLibrary:v1.1'
+   implementation 'com.github.Reidyn:CustomViewLibrary:V1.1.1'
 }
 ```
