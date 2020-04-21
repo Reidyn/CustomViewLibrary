@@ -72,6 +72,14 @@ public class MaterialLoginView extends AbstractCustomLinearLayout implements Log
         });
     }
 
+    public void setOnClickLoginListener(OnClickLoginListener onClickLoginListener){
+        this.onClickLoginListener = onClickLoginListener;
+    }
+
+    public void setOnClickLostPasswordListener(OnClickLostPasswordListener onClickLostPasswordListener){
+        this.onClickLostPasswordListener = onClickLostPasswordListener;
+    }
+
     @Override
     public void loguearse(String usuario, String password) {
         if(onClickLoginListener != null){
