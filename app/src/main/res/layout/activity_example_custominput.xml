@@ -1,30 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <com.innovandoapps.library.customviewlibrary.CustomRounedEditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        app:cpadding="20"
+        app:showTitle="true"
+        app:stringTitle="Custom EdiText"
+        app:enableEditable="true"
+        app:inputtype_edt="TEXT"/>
 
-    <com.innovandoapps.library.customviewlibrary.CustomNumberFormat
+    <com.innovandoapps.library.customviewlibrary.CustomRounedEditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        app:cpadding="20"
+        app:showTitle="true"
+        app:stringTitle="Custom EdiText number"
+        app:enableEditable="true"
+        app:inputtype_edt="NUMBER"/>
 
-    <com.innovandoapps.library.customviewlibrary.CustomDateInput
+    <com.innovandoapps.library.customviewlibrary.CustomRounedEditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        app:cpadding="20"
+        app:showTitle="true"
+        app:stringTitle="Custom EdiText email"
+        app:enableEditable="true"
+        app:inputtype_edt="EMAIL"/>
 
-    <com.innovandoapps.library.customviewlibrary.CustomCelularInput
+    <com.innovandoapps.library.customviewlibrary.CustomRounedEditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        app:showTitle="true"
+        app:stringTitle="Custom EdiText LARGE TEXT"
+        app:enableEditable="true"
+        app:inputtype_edt="TEXT_LARGE"/>
 
-    <com.innovandoapps.library.customviewlibrary.CustomImagenView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <com.innovandoapps.library.customviewlibrary.CustomGalleryView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
