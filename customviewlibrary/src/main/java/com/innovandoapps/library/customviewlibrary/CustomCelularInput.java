@@ -4,14 +4,14 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
-import com.google.android.material.textfield.TextInputEditText;
+import androidx.appcompat.widget.AppCompatEditText;
+import androidx.appcompat.widget.AppCompatSpinner;
 
 public class CustomCelularInput extends LinearLayout {
 
-    private Spinner spprefijo;
-    private Spinner spsubprefijo;
-    private TextInputEditText edtCelular;
+    private AppCompatSpinner spprefijo;
+    private AppCompatSpinner spsubprefijo;
+    private AppCompatEditText edtCelular;
 
     public CustomCelularInput(Context context) {
         super(context);
@@ -28,9 +28,9 @@ public class CustomCelularInput extends LinearLayout {
         LayoutInflater layoutInflater = (LayoutInflater)getContext().getSystemService(infService);
         layoutInflater.inflate(R.layout.custom_celular_input,this, true);
 
-        spprefijo = (Spinner)findViewById(R.id.spprefijo);
-        spsubprefijo = (Spinner)findViewById(R.id.spsubprefijo);
-        edtCelular = (TextInputEditText)findViewById(R.id.edtCelular);
+        spprefijo = (AppCompatSpinner)findViewById(R.id.spprefijo);
+        spsubprefijo = (AppCompatSpinner)findViewById(R.id.spsubprefijo);
+        edtCelular = (AppCompatEditText)findViewById(R.id.edtCelular);
     }
 
     public String getCelularNumber(){
