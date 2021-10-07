@@ -23,7 +23,7 @@ import com.innovandoapps.library.customviewlibrary.R;
  * Created by desarrollo on 23/11/17.
  */
 
-public class LoginView extends LinearLayout{
+public class LoginView extends LinearLayout {
 
     private CardView card_view;
     private TextView lblmsjingreso;
@@ -161,5 +161,10 @@ public class LoginView extends LinearLayout{
                 }
             }
         });
+    }
+
+    public void clear(){
+        edtUsuario.setText("");
+        edtPassword.setText("");
     }
 }

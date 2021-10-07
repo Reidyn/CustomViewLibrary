@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CustomInputExampleActivity"/>
+        <activity android:name=".CustomLoginExampleActivity"/>
     </application>
 
 </manifest>
