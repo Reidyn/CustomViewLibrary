@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //startActivity(new Intent(getApplicationContext(),CustomInputExampleActivity.class));
-        startActivity(new Intent(getApplicationContext(),CustomLoginExampleActivity.class));
+        //startActivity(new Intent(getApplicationContext(),CustomLoginExampleActivity.class));
+        startActivity(new Intent(getApplicationContext(),CustomGalleryExmpleActivity.class));
     }
 }
