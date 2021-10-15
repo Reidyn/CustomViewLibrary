@@ -15,6 +15,9 @@ import com.innovandoapps.library.customviewlibrary.Listeners.OnClickLostPassword
 import com.innovandoapps.library.customviewlibrary.R;
 import com.mindorks.editdrawabletext.DrawablePosition;
 import com.mindorks.editdrawabletext.EditDrawableText;
+import com.mindorks.editdrawabletext.OnDrawableClickListener;
+
+import org.jetbrains.annotations.NotNull;
 
 public class MaterialLoginView extends AbstractCustomLinearLayout implements Login{
 
@@ -45,9 +48,17 @@ public class MaterialLoginView extends AbstractCustomLinearLayout implements Log
         edtUsuario = (TextInputEditText)findViewById(R.id.edtUsuario);
 
         edtPassword = (EditDrawableText)findViewById(R.id.edtPassword);
-        edtPassword.setDrawableClickListener(new com.mindorks.editdrawabletext.onDrawableClickListener(){
+        /*edtPassword.setDrawableClickListener(new com.mindorks.editdrawabletext.onDrawableClickListener(){
             @Override
             public void onClick(DrawablePosition drawablePosition) {
+                if(drawablePosition.equals(DrawablePosition.RIGHT)){
+                    verPassword();
+                }
+            }
+        });*/
+        edtPassword.setDrawableClickListener(new OnDrawableClickListener() {
+            @Override
+            public void onClick(@NotNull DrawablePosition drawablePosition) {
                 if(drawablePosition.equals(DrawablePosition.RIGHT)){
                     verPassword();
                 }
