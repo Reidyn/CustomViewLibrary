@@ -15,5 +15,6 @@ public class MainActivity extends AppCompatActivity {
         //startActivity(new Intent(getApplicationContext(),CustomInputExampleActivity.class));
         //startActivity(new Intent(getApplicationContext(),CustomLoginExampleActivity.class));
         startActivity(new Intent(getApplicationContext(),CustomGalleryExmpleActivity.class));
+        finish();
     }
 }

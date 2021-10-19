@@ -125,7 +125,7 @@ public class CustomGalleryView extends LinearLayout {
     }
 
     private void cargarDatos(){
-        if(imagenes.isEmpty()){
+        /*if(imagenes.isEmpty()){
             btnborrar.setVisibility(GONE);
         }else{
             if(inputtype == 0){
@@ -133,7 +133,7 @@ public class CustomGalleryView extends LinearLayout {
             }else{
                 btnborrar.setVisibility(GONE);
             }
-        }
+        }*/
 
         galeriaAdapter = new GaleriaAdapter(imagenes,getContext(),inputtype,origins,source);
         galeriaAdapter.setOnAddGalleryAdapterListener(new OnAddGalleryAdapterListener() {
