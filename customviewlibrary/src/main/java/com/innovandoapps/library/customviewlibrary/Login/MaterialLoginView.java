@@ -7,17 +7,14 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Button;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import com.google.android.material.textfield.TextInputEditText;
 import com.innovandoapps.library.customviewlibrary.AbstractCustomLinearLayout;
 import com.innovandoapps.library.customviewlibrary.Listeners.OnClickLoginListener;
 import com.innovandoapps.library.customviewlibrary.Listeners.OnClickLostPasswordListener;
 import com.innovandoapps.library.customviewlibrary.R;
-import com.mindorks.editdrawabletext.DrawablePosition;
 import com.mindorks.editdrawabletext.EditDrawableText;
-import com.mindorks.editdrawabletext.OnDrawableClickListener;
-
-import org.jetbrains.annotations.NotNull;
 
 public class MaterialLoginView extends AbstractCustomLinearLayout implements Login{
 
@@ -25,6 +22,7 @@ public class MaterialLoginView extends AbstractCustomLinearLayout implements Log
     private EditDrawableText edtPassword;
     private AppCompatTextView txtRestarPassword;
     private Button btnIngresar;
+    private AppCompatImageView imageButton;
     private boolean showPassword = false;
 
     private OnClickLoginListener onClickLoginListener;
@@ -48,23 +46,6 @@ public class MaterialLoginView extends AbstractCustomLinearLayout implements Log
         edtUsuario = (TextInputEditText)findViewById(R.id.edtUsuario);
 
         edtPassword = (EditDrawableText)findViewById(R.id.edtPassword);
-        /*edtPassword.setDrawableClickListener(new com.mindorks.editdrawabletext.onDrawableClickListener(){
-            @Override
-            public void onClick(DrawablePosition drawablePosition) {
-                if(drawablePosition.equals(DrawablePosition.RIGHT)){
-                    verPassword();
-                }
-            }
-        });*/
-        edtPassword.setDrawableClickListener(new OnDrawableClickListener() {
-            @Override
-            public void onClick(@NotNull DrawablePosition drawablePosition) {
-                if(drawablePosition.equals(DrawablePosition.RIGHT)){
-                    verPassword();
-                }
-            }
-        });
-
         txtRestarPassword = (AppCompatTextView)findViewById(R.id.txtRestarPassword);
         txtRestarPassword.setPaintFlags(txtRestarPassword.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
         txtRestarPassword.setOnClickListener(new OnClickListener() {
@@ -79,6 +60,14 @@ public class MaterialLoginView extends AbstractCustomLinearLayout implements Log
             @Override
             public void onClick(View view) {
                 loguearse(edtUsuario.getText().toString(),edtPassword.getText().toString());
+            }
+        });
+
+        imageButton = (AppCompatImageView)findViewById(R.id.imageButton);
+        imageButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                verPassword();
             }
         });
     }
