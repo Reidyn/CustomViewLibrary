@@ -102,6 +102,9 @@ public class CustomRounedEditText extends LinearLayout {
                 edtCuadroTxt.setGravity(Gravity.TOP);
                 edtCuadroTxt.setTextColor(Color.BLACK);
              break;
+            case 4:
+                edtCuadroTxt.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL | InputType.TYPE_NUMBER_FLAG_SIGNED);
+            break;
         }
 
         asignarEventos();

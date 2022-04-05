@@ -32,6 +32,7 @@
                 <enum name="EMAIL" value="1"/>
                 <enum name="NUMBER" value="2"/>
                 <enum name="TEXT_LARGE" value="3"/>
+                <enum name="NUMBER_DECIMAL" value="4"/>
         </attr>
     </declare-styleable>
 
